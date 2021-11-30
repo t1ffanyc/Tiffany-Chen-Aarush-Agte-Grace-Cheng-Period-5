@@ -1,6 +1,17 @@
-h1{
+li a{
       color: #325288;
       font-size: xx-large;
       font-variant: normal;
       font-family: cursive;
+}
+li a:hover{
+      color: #F5CEBE;
+}
+::backdrop{
+      color: violet;
+}
+
+body {
+      color: #F5CEBE;
+      background-color: #F4EEE8;
 }
