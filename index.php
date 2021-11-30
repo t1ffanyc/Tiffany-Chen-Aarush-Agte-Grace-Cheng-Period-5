@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<h1>pee</h1>
 <script type="text/javascript" src="Website.php"></script>
 </body>
 </html>
