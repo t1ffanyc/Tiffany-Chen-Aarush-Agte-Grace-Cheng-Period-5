@@ -1,12 +1,9 @@
-/* li a{
-      color: #325288;
-      font-size: xx-large;
-      font-variant: normal;
-      font-family: cursive;
-}
-li a:hover{
+body {
       color: #F5CEBE;
-} */
+      background-color: #F4EEE8;
+      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
 li {
       float: left;
     }
@@ -27,9 +24,4 @@ li a:hover {
 }
 ::backdrop{
       color: violet;
-}
-
-body {
-      color: #F5CEBE;
-      background-color: #F4EEE8;
 }
