@@ -1,4 +1,4 @@
-li a{
+/* li a{
       color: #325288;
       font-size: xx-large;
       font-variant: normal;
@@ -6,6 +6,24 @@ li a{
 }
 li a:hover{
       color: #F5CEBE;
+} */
+li {
+      float: left;
+    }
+    
+li a {
+      color: #325288;
+      font-size: xx-large;
+      font-variant: normal;
+      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      display: block;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+}
+    
+li a:hover {
+      background-color: #F5CEBE;
 }
 ::backdrop{
       color: violet;
