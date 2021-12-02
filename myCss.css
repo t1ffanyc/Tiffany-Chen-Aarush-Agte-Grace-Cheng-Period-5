@@ -25,3 +25,8 @@ li a:hover {
 ::backdrop{
       color: violet;
 }
+
+ul
+{
+list-style-type: none;
+}
