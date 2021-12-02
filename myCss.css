@@ -1,5 +1,5 @@
 body {
-      color: #F5CEBE;
+      color: #114e60;
       background-color: #F4EEE8;
       font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
@@ -28,5 +28,15 @@ li a:hover {
 
 ul
 {
-list-style-type: none;
+      list-style-type: none;
+}
+.container {
+      font-family: arial;
+      font-size: 24px;
+      margin: 25px;
+      width: 350px;
+      height: 200px;
+}
+h1{
+      text-align: center;
 }
