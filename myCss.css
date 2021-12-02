@@ -6,7 +6,6 @@ body {
 
 li {
       float: left;
-      width: 200px;
     }
     
 li a {
@@ -23,9 +22,6 @@ li a {
 li a:hover {
       background-color: #F5CEBE;
 }
-::backdrop{
-      color: violet;
-}
 
 ul
 {
@@ -34,11 +30,15 @@ ul
       display: flex;
       justify-content: center;
 }
-.titlebar
-{
-      text-align: center;
-      height: 100px;
-}
+
 h1{
       text-align: center;
+      justify-content: center;
+      padding-top: 50px;
+      height: 100px;
+      background-color: #F5CEBE;
+}
+.titlebar
+{
+      
 }
