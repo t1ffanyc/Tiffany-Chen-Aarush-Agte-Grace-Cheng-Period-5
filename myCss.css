@@ -10,7 +10,7 @@ li {
     
 li a {
       color: #325288;
-      font-size: xx-large;
+      font-size: large;
       font-variant: normal;
       font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       display: block;
@@ -29,13 +29,13 @@ li a:hover {
 ul
 {
       list-style-type: none;
+      text-align: center;
+      display: flex;
 }
-.container {
-      font-family: arial;
-      font-size: 24px;
-      margin: 25px;
-      width: 350px;
-      height: 200px;
+.titlebar
+{
+      text-align: center;
+
 }
 h1{
       text-align: center;
