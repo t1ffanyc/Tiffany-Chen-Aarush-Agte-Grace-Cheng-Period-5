@@ -1,3 +1,4 @@
+<!--if you see this then let me know-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,31 +86,34 @@ margin-top: 20px;
 <p id="answer2"></p>
 </div>
 <script>
-	   document.getElementById("form1").onsubmit=function() {
+    document.getElementById("form1").onsubmit=function() {
 
 
-	   age = parseInt(document.querySelector('input[name = "food"]:checked').value);
+    age = parseInt(document.querySelector('input[name = "food"]:checked').value);
 
-	  activity = parseInt(document.querySelector('input[name = "dairy"]:checked').value);
+    activity = parseInt(document.querySelector('input[name = "dairy"]:checked').value);
 
-	  genre = parseInt(document.querySelector('input[name = "name"]:checked').value);
+    genre = parseInt(document.querySelector('input[name = "name"]:checked').value);
 
-	   total= age + activity + genre;
+    total= age + activity + genre;
 
-	   if(total < 4) {
-document.getElementById("answer2").innerHTML = "You are Farmer John.";
-}
+    if(total < 4)
+    {
+        document.getElementById("answer2").innerHTML = "You are Farmer John.";
+    }
 
-   if(total >=4 && total < 7) {
-document.getElementById("answer2").innerHTML = "You got Bessie.";
-}
+    if(total >=4 && total < 7)
+    {
+        document.getElementById("answer2").innerHTML = "You got Bessie.";
+    }
 
-	if(total >=7) {
-document.getElementById("answer2").innerHTML = "You got Farmer Nhoj.";
-}
+	if(total >=7)
+    {
+        document.getElementById("answer2").innerHTML = "You got Farmer Nhoj.";
+    }
 
-	   return false;
-	   }
+	return false;
+	}
 </script>
 
 </body>
