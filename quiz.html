@@ -58,22 +58,22 @@
 
 <form  id="form1">
 <p>What's your favorite food?</p>
-<label><input type="radio" name="food" id="yay" value="1" />cow</label>
-<label><input type="radio" name="food" id="yayy" value="2" />pizza</label>
-<label><input type="radio" name="food" id="yayyy" value="3" />sushi</label>
-<label><input type="radio" name="food" id="yayyyy" value="4" />farmer john</label>
+<label><input type="radio" name="food" id="yay" value="0" />sushi</label>
+<label><input type="radio" name="food" id="yayy" value="1" />pizza</label>
+<label><input type="radio" name="food" id="yayyy" value="2" />cow</label>
+<label><input type="radio" name="food" id="yayyyy" value="3" />farmer john</label>
 
 <p>What's your favorite meat?</p>
-<label><input type="radio" name="dairy" id="party" value="1" />beef</label>
-<label><input type="radio" name="dairy" id="rock" value="2" />yogurt</label>
-<label><input type="radio"  name="dairy" id="beer" value="3" />butter</label>
-<label><input type="radio"  name="dairy" id="beerd" value="4" />butter</label>
+<label><input type="radio" name="dairy" id="party" value="0" />butter</label>
+<label><input type="radio" name="dairy" id="rock" value="1" />yogurt</label>
+<label><input type="radio"  name="dairy" id="beer" value="2" />butter</label>
+<label><input type="radio"  name="dairy" id="beerd" value="3" />beef</label>
 
 <p>Who is your favorite cow?</p>
-<label><input type="radio" name="name" id="Bessie" value="1" />Bessie</label>
-<label><input type="radio" name="name" id="Blue" value="2" />Bessie</label>
-<label><input type="radio" name="name" id="Elsie" value="3" />Bessie</label>
-<label><input type="radio" name="name" id="Elsied" value="4" />ur fake</label>
+<label><input type="radio" name="name" id="Bessie" value="0" />Bessie</label>
+<label><input type="radio" name="name" id="Blue" value="1" />Bessie</label>
+<label><input type="radio" name="name" id="Elsie" value="2" />Bessie</label>
+<label><input type="radio" name="name" id="Elsied" value="3" />ur fake</label>
 
 
 <button type="submit" value="Submit">Submit</button>
@@ -94,13 +94,13 @@
     genre = parseInt(document.querySelector('input[name = "name"]:checked').value);
 
     total= age + activity + genre;
-
-    if(total < 4)
+    
+    if(total < 3)
     {
         document.getElementById("answer2").innerHTML = "You are Farmer John.";
     }
 
-    if(total >=4 && total < 7)
+    if(total >=3 && total < 7)
     {
         document.getElementById("answer2").innerHTML = "You got Bessie.";
     }
