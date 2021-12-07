@@ -15,7 +15,7 @@
 
 label {
     width: 150px;
-    display: grid;
+    display: flex;
 }
 
 button {
@@ -25,4 +25,9 @@ button {
 p
 {
     color: #717171;
+    font-family: cursive;
+    font-size: large;
+}
+input {
+    
 }
