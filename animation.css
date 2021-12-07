@@ -1,0 +1,21 @@
+#animation {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+    font-size: 100%;
+    position: relative;
+    left: 200px;
+    animation-name: yay;
+    animation-duration: 4s;
+}
+
+@keyframes yay {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
