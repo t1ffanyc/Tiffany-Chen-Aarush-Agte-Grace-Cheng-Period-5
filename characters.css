@@ -83,14 +83,15 @@ figure {
   display: flex;
   flex-flow: column;
   padding: 5px;
-  max-width: 600px;
+  max-width: 500px;
   max-height: 400px;
   margin: auto;
 }
 
 img {
   max-width: 500px;
-  max-height: 500px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 figcaption {
