@@ -1,0 +1,28 @@
+#main {
+    width: 60%;
+    border: 1px gray solid;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#header {
+    margin-top: 0;
+    padding: 5px;
+    height: 250px;
+}
+
+label {
+    width: 150px;
+    display: grid;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+}
+p
+{
+    color: #717171;
+}
