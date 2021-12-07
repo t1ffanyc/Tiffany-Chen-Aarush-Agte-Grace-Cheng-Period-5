@@ -21,7 +21,13 @@ li a {
     
 li a:hover {
       /*background-color: #ff383f;*/
-      color: #ff383f;
+      /* color: #ff383f; */
+      animation: test 0.5s forwards;
+}
+@keyframes test
+{
+  from { color: #a9a9a9; }
+  to { color: #ff383f; }
 }
 
 ul
@@ -32,11 +38,11 @@ ul
       justify-content: center;
 }
 
-h1{
+.header{
       text-align: center;
       justify-content: center;
       padding-top: 50px;
-      height: 150px;
+      height: 200px;
       background-color: #CAEBf2;
 }
 .paragraphinfo
@@ -143,4 +149,17 @@ h1{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid #ff383f;
+  white-space: nowrap;
+  animation: 
+    typing 3s forwards;
+  font-size: 3rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
