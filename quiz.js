@@ -11,17 +11,17 @@ document.getElementById("form1").onsubmit=function() {
     
     if(total < 3)
     {
-        document.getElementById("answer2").innerHTML = "You are Farmer John.";
+        window.location.href = "quiz-farmerJohn.html";
     }
 
     if(total >=3 && total < 7)
     {
-        document.getElementById("answer2").innerHTML = "You got Bessie.";
+        window.location.href = "quiz-bessie.html";
     }
 
 	if(total >=7)
     {
-        document.getElementById("answer2").innerHTML = "You got Farmer Nhoj.";
+        window.location.href = "quiz-farmerNhoj.html";
     }
 
 	return false;
