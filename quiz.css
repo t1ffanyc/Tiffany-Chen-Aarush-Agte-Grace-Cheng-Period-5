@@ -10,12 +10,12 @@
 #header {
     margin-top: 0;
     padding: 5px;
-    height: 250px;
+    height: 50px;
 }
 
 label {
     width: 150px;
-    display: flex;
+    display: inline;
 }
 
 button {
@@ -27,7 +27,4 @@ p
     color: #717171;
     font-family: cursive;
     font-size: large;
-}
-input {
-    
 }
