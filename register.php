@@ -107,6 +107,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+    <div class="titlebar">
+        <ul>
+            <li><a href="index.php">home</a></li>
+            <li><a href="problems.html">problems</a></li>
+            <li><a href="characters.html">characters</a></li>
+            <li><a href="quiz.html">quiz</a></li>
+            <li><a href="register.php">register</a></li>
+        </ul>
+    </div>
+
     <div class="wrapper">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
