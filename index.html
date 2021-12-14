@@ -12,7 +12,7 @@
 <body>
     <div class="titlebar">
         <ul>
-            <li><a href="index.html">home</a></li>
+            <li><a href="index.html" class="selected-page">home</a></li>
             <li><a href="problems.html">problems</a></li>
             <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
