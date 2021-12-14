@@ -12,10 +12,11 @@
 <body>
     <div class="titlebar">
         <ul>
-            <li><a href="index.html">home</a></li>
+            <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
             <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
+            <li><a href="register.php">REGSITER</a></li>
         </ul>
     </div>
 
@@ -25,7 +26,7 @@
 
     <div>
         <h2>What is USACO?</h2>
-        <p>The United States of America Computing Olympiad (USACO) is an online computer programming competition, which serves as qualification for the International Olympiad in Informatics (IOI) in the United States. Primarily for secondary school students in the United States, the USACO offers four competitions (December, January, February, US Open) during the academic year. Participants compete in four increasingly difficult divisions: Bronze, Silver, Gold and Platinum; coding & submitting computer programs in one of four languages: C, C++, Java, and Python. Competitors advance through the levels by performing well in their current division.</p>
+        <p>THe United States of America Computing Olympiad (USACO) is an online computer programming competition, which serves as qualification for the International Olympiad in Informatics (IOI) in the United States. Primarily for secondary school students in the United States, the USACO offers four competitions (December, January, February, US Open) during the academic year. Participants compete in four increasingly difficult divisions: Bronze, Silver, Gold and Platinum; coding & submitting computer programs in one of four languages: C, C++, Java, and Python. Competitors advance through the levels by performing well in their current division.</p>
     </div>
 
     <div>
