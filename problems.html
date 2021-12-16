@@ -24,12 +24,29 @@
     <div class="header">
         <h1 class = "typed-out">problems</h1>
     </div>
-    
-    <ul>
-      <li>po</li>
-      <li>pa</li>
-    </ul>
+    <br>
+  <div class = "main">
+    <select multiple onchange="putininfo(this)">
+      <option value="1">Do You Know Your ABCs?</option>
+      <option value="2">Daisy Chains</option>
+      <option value="3">Stuck in a Rut</option>
+      <option value="4">Cowntagion</option>
+      <option value="5">Sleeping Cows</option>
+    </select>
+    <div class = "infos">
+      <br>
+      <h2 id = "problem-name">click to select a problem</h2>
+      <br>
 
-    <script src="listbox-scrollable.js" type="text/javascript"></script>
+      <p id="problem-info"></p>
+
+      <div id = "button-container">
+        <button type="button" id="linktowebsite" value="" onclick="linkToProb()">link to problem</button>
+      </div>
+
+    </div>
+  </div>
+
+    <script src="problems.js" type="text/javascript"></script>
 </body>
 </html>
