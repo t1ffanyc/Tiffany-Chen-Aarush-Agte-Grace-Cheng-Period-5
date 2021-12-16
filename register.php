@@ -100,23 +100,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="myCss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px; }
+        body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
     </style>
 </head>
 <body>
-    <div class="titlebar">
-        <ul>
-            <li><a href="index.php">home</a></li>
-            <li><a href="problems.html">problems</a></li>
-            <li><a href="characters.html">characters</a></li>
-            <li><a href="quiz.html">quiz</a></li>
-            <li><a href="register.php">register</a></li>
-        </ul>
-    </div>
-
     <div class="wrapper">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
