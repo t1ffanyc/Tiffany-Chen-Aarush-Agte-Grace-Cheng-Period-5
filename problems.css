@@ -30,8 +30,9 @@ button
   width: 200px;
   height: 25px;
   font-family: 'Readex Pro', sans-serif;
-  background-color: #a9a9a9;
-  color: #EFEFEF;
+  background-color: #EFEFEF;
+  border-color: #a9a9a9;
+  color: #114e60;
 }
 option
 {
