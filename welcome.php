@@ -1,14 +1,30 @@
 <?php
-// Initialize the session
+
+// We need to use sessions, so you should always start sessions using the below code.
 session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: index.html');
+	exit;
 }
+$DATABASE_HOST = 'localhost:3307';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '123456';
+$DATABASE_NAME = 'logindb';
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+// We don't have the password or email info stored in sessions so instead we can get the results from the database.
+$stmt = $con->prepare('SELECT password, email FROM users WHERE id = ?');
+// In this case we can use the account ID to get the account info.
+$stmt->bind_param('i', $_SESSION['id']);
+$stmt->execute();
+$stmt->bind_result($password, $email);
+$stmt->fetch();
+$stmt->close();
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,15 +94,15 @@ body {
   <div class="column">
     <div class="card">
     <img src="farmernhjo.png" alt="Avatar" style="width:100%">
-    <h4><h1 class="my-5">Welcome <?php echo htmlspecialchars($_SESSION["email"]); ?></h4> 
+    <h4><h1 class="my-5">Welcome <?php echo htmlspecialchars($_SESSION["username"]); ?></h4> 
     <p>Status: Moosaco friend!</p> 
     </div>
   </div>
 <div class="column">
     <div class="card">
-      <h3>Information</h3>
-      <p><?php echo htmlspecialchars($_SESSION["password"]); ?></p>
-      <p>Some text</p>
+      <h3><?=$password?></h3>
+      <p>email</p>
+      <p></p>
     </div>
   </div>
   <div class="column">
