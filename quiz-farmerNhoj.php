@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    $_SESSION["cow"] = "farmer nhoj";
+    exit;
+}
+?>
 <body>
     <div class="titlebar">
         <ul>
@@ -19,13 +29,6 @@
             <li><a href="quiz.html">quiz</a></li>
         </ul>
     </div>
-
-    <div class="header">
-        <h1 class = "typed-out">farmie john</h1>
-    </div>
-
-    <br>
-    
     <style>
         p{
             float: left;
@@ -34,9 +37,15 @@
             max-width: 500px;;
         }
     </style>
+    <div class="header">
+        <h1 class = "typed-out">farmer nhoj</h1>
+    </div>
+
+    <br>
+
     <div>
-        <img src="https://bloximages.newyork1.vip.townnews.com/daily-journal.com/content/tncms/assets/v3/editorial/c/53/c539e176-f4d0-11eb-9dba-579fe94fec4d/610a03e268fce.image.jpg?resize=1200%2C800" width=50% style="float: left; padding-left: 25px;">
-        <p>You're farmer john! You are down to earth, likeable, and a great farmer. All the cows on the farm love to see you when you work with them.</p>
+        <img src="farmernhjo.png" width=50% style="float: left;">
+        <p style="float: left;">You're farmer Nhoj! You're chaotic, funny, and silly. You are often seen giving fiery speeches about cow farming techniques. Your natural rival is Farmer John, but at the end of the day you two are best friends.</p>
     </div>
 </body>
 </html>
