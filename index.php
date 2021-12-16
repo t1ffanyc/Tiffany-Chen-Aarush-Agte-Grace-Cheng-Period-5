@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="myCss.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>usaco lore</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +25,12 @@
         <h1 class = "typed-out">usaco lore</h1>
     </div>
 
-    <div>
+    <div class="paragraph">
         <h2>What is USACO?</h2>
-        <p>THe United States of America Computing Olympiad (USACO) is an online computer programming competition, which serves as qualification for the International Olympiad in Informatics (IOI) in the United States. Primarily for secondary school students in the United States, the USACO offers four competitions (December, January, February, US Open) during the academic year. Participants compete in four increasingly difficult divisions: Bronze, Silver, Gold and Platinum; coding & submitting computer programs in one of four languages: C, C++, Java, and Python. Competitors advance through the levels by performing well in their current division.</p>
+        <p>The United States of America Computing Olympiad (USACO) is an online computer programming competition, which serves as qualification for the International Olympiad in Informatics (IOI) in the United States. Primarily for secondary school students in the United States, the USACO offers four competitions (December, January, February, US Open) during the academic year. Participants compete in four increasingly difficult divisions: Bronze, Silver, Gold and Platinum; coding & submitting computer programs in one of four languages: C, C++, Java, and Python. Competitors advance through the levels by performing well in their current division.</p>
     </div>
 
-    <div>
+    <div class = "paragraph">
         <h2>When is USACO?</h2>
         <p>The USACO competition takes place 3 times every school year, with a US Open competition after for all those who do well.</p>
     </div>
