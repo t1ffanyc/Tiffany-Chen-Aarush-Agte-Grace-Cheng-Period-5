@@ -63,6 +63,18 @@ body {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
+<script>
+var btns = "";
+var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var letterArray = letters.split("");
+for(var i = 0; i < 26; i++){
+    var letter = letterArray.shift();
+    btns += '<button class="mybtns" onclick="alphabetSearch(\''+letter+'\');">'+letter+'</button>';
+}
+function alphabetSearch(let){
+    window.location = "search_results.php?letter="+let;
+}
+</script>
 <body>
     <div class="titlebar">
         <ul>
@@ -84,9 +96,8 @@ body {
   </div>
 <div class="column">
     <div class="card">
-      <h3></h3>
-      <p>email</p>
-      <p></p>
+      <h3>Other moosaco lovers!</h3>
+      <script> document.write(btns); </script>
     </div>
   </div>
   <div class="column">
