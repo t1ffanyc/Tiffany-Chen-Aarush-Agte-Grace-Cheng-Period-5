@@ -37,6 +37,6 @@ function putininfo(select)
 function linkToProb()
 {
   var link = document.getElementById("linktowebsite").value;
-  document.location = link;
+  window.open(link, '_blank')
   console.log(link)
 }

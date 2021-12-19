@@ -1,20 +1,29 @@
 <?php
-
-// We need to use sessions, so you should always start sessions using the below code.
+// Initialize the session
 session_start();
-// If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
-	exit;
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
 }
-// We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $con->prepare('SELECT password FROM users WHERE id = ?');
-// In this case we can use the account ID to get the account info.
-$stmt->bind_param('i', $_SESSION['id']);
-$stmt->execute();
-$stmt->bind_result($password, $email);
-$stmt->fetch();
-$stmt->close();
+$results = "";
+$letter = "";
+if(isset($_GET['letter']) && strlen($_GET['letter']) == 1){
+    $letter = preg_replace('#[^a-z]#i', '', $_GET['letter']);
+    if(strlen($letter) != 1){
+        echo "ERROR: Hack Attempt, after filtration the variable is empty.";
+        exit();
+    }
+    // Connect to database here now
+    // SELECT * FROM movies WHERE title LIKE '%$letter'
+    // Use a while loop to append database results into the $results variable ($results .=)
+    // Close your database connection here after your while loop closes
+    
+    // The line below is only to use for testing purposes before you
+    // attempt to connect to your database and query it, remove this line after initial test
+    $results = "PHP recognizes the dynamic ".$letter." and can search MySQL using it";
+}
 ?>
 
 <!DOCTYPE html>
@@ -71,6 +80,18 @@ body {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
+<script>
+var btns = "";
+var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var letterArray = letters.split("");
+for(var i = 0; i < 26; i++){
+    var letter = letterArray.shift();
+    btns += '<button class="mybtns" onclick="alphabetSearch(\''+letter+'\');">'+letter+'</button>';
+}
+function alphabetSearch(let){
+    window.location = "search_results.php?letter="+let;
+}
+</script>
 <body>
     <div class="titlebar">
         <ul>
@@ -92,9 +113,8 @@ body {
   </div>
 <div class="column">
     <div class="card">
-      <h3><?=$password?></h3>
-      <p>email</p>
-      <p></p>
+      <h3>Other moosaco lovers!</h3>
+      <script> document.write(btns); </script>
     </div>
   </div>
   <div class="column">
