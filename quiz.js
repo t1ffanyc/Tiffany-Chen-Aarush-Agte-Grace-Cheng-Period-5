@@ -15,22 +15,22 @@ document.getElementById("form1").onsubmit=function() {
     
     if(total < 6)
     {
-        window.location.href = "quiz\results\quiz-farmerJohn.php";
+        window.location.href = "quiz-farmerJohn.php";
     }
 
     if(total >=6 && total < 12)
     {
-        window.location.href = "quiz\results\quiz-bessie.php";
+        window.location.href = "quiz-bessie.php";
     }
 
 	if(total >=12 && total < 17)
     {
-        window.location.href = "quiz\results\quiz-farmerNhoj.php";
+        window.location.href = "quiz-farmerNhoj.php";
     }
 
     if (total >= 17)
     {
-        window.location.href = "quiz\results\quiz-elsie.php";
+        window.location.href = "quiz-elsie.php";
     }
     
 	return false;
