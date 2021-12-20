@@ -4,162 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="myCss.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+      * {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 900px;
+  max-height: 600px;
+  position: static;
+  padding-top: 50px;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 100px;
+  margin-left: 35px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 100px;
+  margin-right: 225px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 830px;
+  max-height: 700px;
+  margin: auto;
+}
+
+img {
+  width: 806px;
+  height: 500px;
+  object-fit: cover;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font-family: 'Readex Pro', sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+    </style>
     <title>usaco lore</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <style>
-        * {box-sizing:border-box}
-
-        .slideshow-container {
-        max-width: 900px;
-        max-height: 600px;
-        position: static;
-        padding-top: 50px;
-        }
-
-
-        .mySlides {
-        display: none;
-        }
-
-        .prev {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: 1200px;
-        margin-left: 35px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        }
-
-        .next{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: 1200px;
-        margin-left: 0px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        }
-
-        .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-        }
-
-        .text {
-        color: #000000;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-        }
-
-        .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-        background-color: #717171;
-        }
-
-        .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-        }
-
-        @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-        }
-
-        figure {
-        border: thin #c0c0c0 solid;
-        display: flex;
-        flex-flow: column;
-        padding: 5px;
-        max-width: 830px;
-        max-height: 700px;
-        margin: auto;
-        }
-
-        img {
-        width: 806px;
-        height: 500px;
-        object-fit: cover;
-        }
-
-        figcaption {
-        background-color: #222;
-        color: #fff;
-        font-family: 'Readex Pro', sans-serif;
-        padding: 3px;
-        text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <div class="titlebar">
+  
+    <div>
         <ul>
             <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
+            <li><a href="characters.html" class="selected-page">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
             <li><a href="welcome.php">my account</a></li>
         </ul>
     </div>
-
-    <div class="animation-div">
-        <h3 id="animation-h1" class="animation"><br>When you do USACO,<br>you become
-        <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[ "cool.", "nerd.", "funny.", "scrumptious.", "absolutely delectable!" ]'></span>
-        </h3>
-        <br><br><br>
-        <h4 id = "animation-h2" class="animation">Do USACO now at: <a href="http://www.usaco.org/" target="_blank">usaco.org</a></h4>
-    </div>
-
-    <div class="paragraph">
-        <h2>What is USACO?</h2>
-        <p>The United States of America Computing Olympiad (USACO) is an online computer programming competition, which serves as qualification for the International Olympiad in Informatics (IOI) in the United States. Primarily for secondary school students in the United States, the USACO offers four competitions (December, January, February, US Open) during the academic year. Participants compete in four increasingly difficult divisions: Bronze, Silver, Gold and Platinum; coding & submitting computer programs in one of four languages: C, C++, Java, and Python. Competitors advance through the levels by performing well in their current division.</p>
-    </div>
-
-    <div class = "paragraph">
-        <h2>When is USACO?</h2>
-        <p>The USACO competition takes place 3 times every school year, with a US Open competition after for all those who do well.</p>
-    </div>
-
-    <h1>characters</h1>
+    
+    <div class="header">
+      <h1 class = "typed-out">characters</h1>
+  </div>
 
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -276,8 +259,6 @@
         <span class="dot" onclick="currentSlide(11)"></span>
         <span class="dot" onclick="currentSlide(12)"></span>
       </div>
-
-    <script type="text/javascript" src="Website.js"></script>
-    <script type="text/javascript" src="characters.js"></script>
+      <script type="text/javascript" src="characters.js"></script>
 </body>
 </html>
