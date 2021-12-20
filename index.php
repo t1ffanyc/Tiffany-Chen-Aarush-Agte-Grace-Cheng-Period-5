@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="myCss.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
     <title>usaco lore</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,9 +131,9 @@
     <div class="titlebar">
         <ul>
             <li><a href="index.php">home</a></li>
-            <li><a href="problems.html">problems</a></li>
-            <li><a href="quiz.html">quiz</a></li>
-            <li><a href="welcome.php">my account</a></li>
+            <li><a href="problems\problems.html">problems</a></li>
+            <li><a href="quiz\quiz.html">quiz</a></li>
+            <li><a href="myAccount\welcome.php">my account</a></li>
         </ul>
     </div>
 
@@ -278,7 +277,7 @@
         <span class="dot" onclick="currentSlide(12)"></span>
       </div>
 
-    <script type="text/javascript" src="Website.js"></script>
-    <script type="text/javascript" src="characters.js"></script>
+    <script type="text/javascript" src="index\Website.js"></script>
+    <script type="text/javascript" src="index\characters.js"></script>
 </body>
 </html>

@@ -106,10 +106,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="titlebar">
         <ul>
             <li><a href="index.php">home</a></li>
-            <li><a href="problems.html">problems</a></li>
-            <li><a href="characters.html">characters</a></li>
-            <li><a href="quiz.html">quiz</a></li>
-            <li><a href="welcome.php">my account</a></li>
+            <li><a href="problems\problems.html">problems</a></li>
+            <li><a href="quiz\quiz.html">quiz</a></li>
+            <li><a href="myAccount\welcome.php">my account</a></li>
         </ul>
     </div>
     <div class="header">
@@ -138,7 +137,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="myAccount\register.php">Sign up now</a>.</p>
         </form>
     </div>
 </body>

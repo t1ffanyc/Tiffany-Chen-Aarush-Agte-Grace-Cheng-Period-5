@@ -67,9 +67,9 @@ body {
     <div class="titlebar">
         <ul>
             <li><a href="index.php">home</a></li>
-            <li><a href="problems.html">problems</a></li>
-            <li><a href="quiz.html">quiz</a></li>
-            <li><a href="welcome.php">my account</a></li>
+            <li><a href="problems\problems.html">problems</a></li>
+            <li><a href="quiz\quiz.html">quiz</a></li>
+            <li><a href="myAccount\welcome.php">my account</a></li>
         </ul>
     </div>
 <body>
@@ -92,8 +92,8 @@ body {
   <div class="column">
     <div class="card">
       <h3>Options</h3>
-      <p><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></p>
-      <p><a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a></p>
+      <p><a href="myAccount\reset-password.php" class="btn btn-warning">Reset Your Password</a></p>
+      <p><a href="myAccount\logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a></p>
     </div>
   </div>
 </div>
