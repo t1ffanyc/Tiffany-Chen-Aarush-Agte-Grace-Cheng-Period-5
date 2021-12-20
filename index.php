@@ -135,7 +135,7 @@
             <li><a href="problems.html">problems</a></li>
             <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
-            <li><a href="register.php">register</a></li>
+            <li><a href="welcome.php">my account</a></li>
         </ul>
     </div>
 

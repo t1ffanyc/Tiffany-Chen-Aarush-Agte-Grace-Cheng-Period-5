@@ -7,23 +7,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
-$results = "";
-$letter = "";
-if(isset($_GET['letter']) && strlen($_GET['letter']) == 1){
-    $letter = preg_replace('#[^a-z]#i', '', $_GET['letter']);
-    if(strlen($letter) != 1){
-        echo "ERROR: Hack Attempt, after filtration the variable is empty.";
-        exit();
-    }
-    // Connect to database here now
-    // SELECT * FROM movies WHERE title LIKE '%$letter'
-    // Use a while loop to append database results into the $results variable ($results .=)
-    // Close your database connection here after your while loop closes
-    
-    // The line below is only to use for testing purposes before you
-    // attempt to connect to your database and query it, remove this line after initial test
-    $results = "PHP recognizes the dynamic ".$letter." and can search MySQL using it";
-}
 ?>
 
 <!DOCTYPE html>
@@ -80,18 +63,6 @@ body {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
-<script>
-var btns = "";
-var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var letterArray = letters.split("");
-for(var i = 0; i < 26; i++){
-    var letter = letterArray.shift();
-    btns += '<button class="mybtns" onclick="alphabetSearch(\''+letter+'\');">'+letter+'</button>';
-}
-function alphabetSearch(let){
-    window.location = "search_results.php?letter="+let;
-}
-</script>
 <body>
     <div class="titlebar">
         <ul>
@@ -99,7 +70,7 @@ function alphabetSearch(let){
             <li><a href="problems.html">problems</a></li>
             <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
-            <li><a href="register.php">register</a></li>
+            <li><a href="welcome.php">my account</a></li>
         </ul>
     </div>
 <body>
@@ -114,7 +85,9 @@ function alphabetSearch(let){
 <div class="column">
     <div class="card">
       <h3>Other moosaco lovers!</h3>
-      <script> document.write(btns); </script>
+      <form action="searchresults.php" method="post"> Search <input type="text" name="search"><br>
+<input type ="submit">
+</form> </script>
     </div>
   </div>
   <div class="column">
