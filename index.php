@@ -30,7 +30,7 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: 800px;
+        margin-top: 1200px;
         margin-left: 35px;
         padding: 16px;
         color: white;
@@ -46,8 +46,8 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: 800px;
-        margin-right: 225px;
+        margin-top: 1200px;
+        margin-left: 0px;
         padding: 16px;
         color: white;
         font-weight: bold;
@@ -133,19 +133,19 @@
         <ul>
             <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
-            <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
             <li><a href="register.php">register</a></li>
         </ul>
     </div>
 
     <div class="animation-div">
-        <h3 id="animation-h1" class="animation">When you do USACO,<br> you become
+        <h3 id="animation-h1" class="animation"><br>When you do USACO,<br>you become
         <span
             class="txt-rotate"
             data-period="2000"
             data-rotate='[ "cool.", "nerd.", "funny.", "scrumptious.", "absolutely delectable!" ]'></span>
         </h3>
+        <br><br><br>
         <h4 id = "animation-h2" class="animation">Do USACO now at: <a href="http://www.usaco.org/" target="_blank">usaco.org</a></h4>
     </div>
 
@@ -158,10 +158,8 @@
         <h2>When is USACO?</h2>
         <p>The USACO competition takes place 3 times every school year, with a US Open competition after for all those who do well.</p>
     </div>
-    
-    <div class="header">
-      <h1 class = "typed-out">characters</h1>
-  </div>
+
+    <h1>characters</h1>
 
     <div class="slideshow-container">
         <div class="mySlides fade">

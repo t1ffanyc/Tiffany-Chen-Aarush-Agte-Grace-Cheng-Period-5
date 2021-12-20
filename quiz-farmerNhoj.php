@@ -23,10 +23,10 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 <body>
     <div class="titlebar">
         <ul>
-            <li><a href="index.html">home</a></li>
+            <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
-            <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
+            <li><a href="register.php">register</a></li>
         </ul>
     </div>
     <style>
