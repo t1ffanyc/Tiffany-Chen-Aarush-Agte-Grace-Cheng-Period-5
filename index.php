@@ -18,6 +18,7 @@
         max-height: 600px;
         position: static;
         padding-top: 50px;
+        margin: auto;
         }
 
 
@@ -139,13 +140,13 @@
     </div>
 
     <div class="animation-div">
-        <h3 id="animation-h1" class="animation">When you do USACO,<br> you become
+        <h3 id="animation-h1" class="animation"><br>When you do USACO,<br> you become
         <span
             class="txt-rotate"
             data-period="2000"
             data-rotate='[ "cool.", "nerdy.", "funny.", "scrumptious.", "absolutely delectable!" ]'></span>
         </h3>
-        <h4 id = "animation-h2" class="animation">Do USACO now at: <a href="http://www.usaco.org/" target="_blank">usaco.org</a></h4>
+        <h4 id = "animation-h2" class="animation"><br>Do USACO now at: <a href="http://www.usaco.org/" target="_blank">usaco.org</a></h4>
     </div>
 
     <div class="paragraph">
