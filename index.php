@@ -30,7 +30,7 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: 600px;
+        margin-top: 1100px;
         margin-left: 35px;
         padding: 16px;
         color: white;
@@ -46,8 +46,8 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: 600px;
-        margin-right: 350px;
+        margin-top: 1100px;
+        right: 535px;
         padding: 16px;
         color: white;
         font-weight: bold;
@@ -175,7 +175,7 @@
           <div class="numbertext">2 / 12</div>
           <figure>
             <img src="https://pbs.twimg.com/profile_images/2344933022/cow2_400x400.jpg" style="width:100%">
-            <figcaption>Bessie the cow is the prize cow of the farm. She is the leader of the cows and the older sister to Elsie. She's well read and has an endless thirst for knowledge. She even has a college degree at such a young age!</figcaption>
+            <figcaption>Bessie is the prize cow of the farm. She is the leader of the cows and the older sister to Elsie. She's well read and has an endless thirst for knowledge. She even has a college degree at such a young age!</figcaption>
           </figure>
         </div>
       
@@ -247,7 +247,7 @@
             <div class="numbertext">11 / 12</div>
             <figure>
             <img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2JlZWNkNjVhZTJmYzQ0NWRlZl80ODE2NzIyODkzXzIxYjc2ZjNlMzhfYi5qcGciXSxbInAiLCJjb252ZXJ0IiwiIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdLFsicCIsInRodW1iIiwiNzgweDUyMCMiXV0" style="width:100%">
-            <figcaption>Sue is the kook of the farm. She often forgets details about her life and is the older sister of Blue.</figcaption>
+            <figcaption>Sue is the kook of the farm. She often forgets details about her life and is the older sister of Blue. She is also not a real cow.</figcaption>
             </figure>
           </div>
           <div class="mySlides fade">
