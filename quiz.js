@@ -13,22 +13,22 @@ document.getElementById("form1").onsubmit=function() {
 
     total = food + favMeat + favCow + color + vacation + drink + candy;
     
-    if(total < 6)
+    if(total < 5)
     {
         window.location.href = "quiz-farmerJohn.php";
     }
 
-    if(total >=6 && total < 12)
+    if(total >=5 && total < 11)
     {
         window.location.href = "quiz-bessie.php";
     }
 
-	if(total >=12 && total < 17)
+	if(total >=11 && total < 15)
     {
         window.location.href = "quiz-farmerNhoj.php";
     }
 
-    if (total >= 17)
+    if (total >= 15)
     {
         window.location.href = "quiz-elsie.php";
     }

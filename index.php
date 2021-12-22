@@ -31,7 +31,7 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: 1100px;
+        margin-top: 1000px;
         margin-left: 35px;
         padding: 16px;
         color: white;
@@ -47,8 +47,8 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: 1100px;
-        right: 225px;
+        margin-top: 1000px;
+        right: 220px;
         padding: 16px;
         color: white;
         font-weight: bold;
@@ -144,7 +144,7 @@
         <span
             class="txt-rotate"
             data-period="2000"
-            data-rotate='[ "cool.", "nerdy.", "funny.", "scrumptious.", "absolutely delectable!" ]'></span>
+            data-rotate='[ "cool.", "nerd.", "funny.", "scrumptious.", "absolutely delectable!" ]'></span>
         </h3>
         <h4 id = "animation-h2" class="animation"><br>Do USACO now at: <a href="http://www.usaco.org/" target="_blank">usaco.org</a></h4>
     </div>

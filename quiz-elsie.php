@@ -44,7 +44,7 @@ mysqli_close($link);
         </ul>
     </div>
     <div class="header">
-        <h1 class = "typed-out">bessie</h1>
+        <h1 class = "typed-out">elsie</h1>
     </div>
 
     <br>
@@ -58,8 +58,8 @@ mysqli_close($link);
         }
     </style>
     <div>
-        <img src="https://pbs.twimg.com/profile_images/2344933022/cow2_400x400.jpg" width=50% style="float: left; padding-left: 25px;">
-        <p>You're Bessie! You're incredibly smart, talented, and popular. You're known to be one of farmer John's prize cows and are best sisters with Elsie.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9rzbRGMbE0QsnLt8W8-8XrJSIjYgTuHGQw&usqp=CAU" width=50% style="float: left; padding-left: 25px;">
+        <p>You're Elsie! You're a natural leader and the youngest of all the cows. While Bessie is usually busy with farm duties you always make time to play witht the other cows.</p>
     </div>
 </body>
 </html>
