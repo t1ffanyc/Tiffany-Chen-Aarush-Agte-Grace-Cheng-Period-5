@@ -1,17 +1,26 @@
 <?php
+
+
+session_start();
+
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+
 require_once "config.php";
 
-$sql = "UPDATE users SET cows = 'Bessie' WHERE id = ?";
+$type = $_SESSION["loggedin"];
+$query = "UPDATE users SET cows = 'bessie' WHERE id = ?";
+$stmt = $link->prepare($query);
+$stmt->bind_param("s", $type);
+$stmt->execute();
 
-if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
-  } else {
-    echo "Error updating record: " . $conn->error;
-  }
-  
-  $conn->close();
+
+mysqli_close($link);
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +37,7 @@ if ($conn->query($sql) === TRUE) {
 <body>
     <div class="titlebar">
         <ul>
-        <li><a href="index.php">home</a></li>
+            <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
             <li><a href="quiz.html">quiz</a></li>
             <li><a href="welcome.php">my account</a></li>

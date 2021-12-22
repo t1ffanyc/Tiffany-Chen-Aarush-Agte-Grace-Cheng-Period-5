@@ -43,7 +43,7 @@ mysqli_close($link);
             <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
             <li><a href="quiz.html">quiz</a></li>
-            <li><a href="register.php">register</a></li>
+            <li><a href="welcome.php">my account</a></li>
         </ul>
     </div>
 
