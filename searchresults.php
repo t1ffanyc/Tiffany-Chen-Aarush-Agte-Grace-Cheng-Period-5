@@ -41,7 +41,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
 while($row = $result->fetch_assoc() ){
-	echo  "Username: ", $row["username"], "<br>",  " Quiz result: ", $row["cows"]  ;
+	echo  "Username: ", $row["username"], "<br>",  " Quiz result: ", $row["cows"], "<br>" ;
 }
 } else {
 	echo "0 records";

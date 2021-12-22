@@ -10,7 +10,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 require_once "config.php";
 
-$type = $_SESSION["loggedin"];
+$type = $_SESSION["id"];
 $query = "UPDATE users SET cows = 'farmer nhoj' WHERE id = ?";
 $stmt = $link->prepare($query);
 $stmt->bind_param("s", $type);

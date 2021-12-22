@@ -15,7 +15,7 @@
 
         .slideshow-container {
         max-width: 900px;
-        max-height: 600px;
+        max-height: 650px;
         position: static;
         padding-top: 50px;
         margin: auto;
@@ -48,7 +48,7 @@
         top: 50%;
         width: auto;
         margin-top: 1100px;
-        right: 535px;
+        right: 225px;
         padding: 16px;
         color: white;
         font-weight: bold;
