@@ -115,7 +115,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <ul>
             <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
-            <li><a href="characters.html">characters</a></li>
             <li><a href="quiz.html">quiz</a></li>
             <li><a href="welcome.php">my account</a></li>
         </ul>
