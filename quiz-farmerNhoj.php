@@ -1,3 +1,25 @@
+<?php
+
+
+session_start();
+
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+
+require_once "config.php";
+
+$type = $_SESSION["loggedin"];
+$query = "UPDATE users SET cows = 'farmer nhoj' WHERE id = ?";
+$stmt = $link->prepare($query);
+$stmt->bind_param("s", $type);
+$stmt->execute();
+
+
+mysqli_close($link);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    $_SESSION["cow"] = "farmer nhoj";
-    exit;
-}
-?>
+
 <body>
     <div class="titlebar">
         <ul>

@@ -1,3 +1,17 @@
+<?php
+require_once "config.php";
+
+$sql = "UPDATE users SET cows = 'Bessie' WHERE id = ?";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  } else {
+    echo "Error updating record: " . $conn->error;
+  }
+  
+  $conn->close();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +24,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    $_SESSION["cow"] = "bessie";
-    exit;
-}
-?>
+
 <body>
     <div class="titlebar">
         <ul>
-            <li><a href="index.php">home</a></li>
+        <li><a href="index.php">home</a></li>
             <li><a href="problems.html">problems</a></li>
             <li><a href="quiz.html">quiz</a></li>
-            <li><a href="register.php">register</a></li>
+            <li><a href="welcome.php">my account</a></li>
         </ul>
     </div>
 
